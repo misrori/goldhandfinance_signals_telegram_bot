@@ -32,3 +32,4 @@ fig.write_image("static_plot.png")
 bot = telebot.TeleBot(BOT_TOKEN)
 
 bot.send_photo(-1002368684493, photo=open('static_plot.png', 'rb'))
+
