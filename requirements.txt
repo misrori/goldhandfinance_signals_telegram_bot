@@ -1,0 +1,5 @@
+goldhand
+python-dotenv
+pyTelegramBotAPI
+ipython
+kaleido
