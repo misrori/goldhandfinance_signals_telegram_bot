@@ -5,7 +5,7 @@ from goldhand import *
 
 load_dotenv()
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-
+CHAT_ID = os.environ.get("CHAT_ID")
 
 
 # tradingView data
@@ -31,5 +31,5 @@ fig.write_image("static_plot.png")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
-bot.send_photo(-1002368684493, photo=open('static_plot.png', 'rb'))
+bot.send_photo(CHAT_ID, photo=open('static_plot.png', 'rb'))
 
