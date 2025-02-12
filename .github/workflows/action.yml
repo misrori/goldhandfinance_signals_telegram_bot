@@ -31,4 +31,5 @@ jobs:
       - name: execute py script # run main.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{secrets.CHAT_I}}
         run: python bot.py
